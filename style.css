@@ -1,0 +1,40 @@
+.container {
+  height: 80vh;
+  width: 100%;
+  background-color: aquamarine;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 70px;
+  animation: xaxis 10s linear infinite forwards, yaxis 1s ease-out infinite alternate;
+
+
+}
+
+@keyframes xaxis {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes yaxis {
+  from {
+    bottom: 0%;
+  }
+
+  to {
+    bottom: 100%;
+  }
+}
